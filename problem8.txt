@@ -1,0 +1,35 @@
+var ques = "What was your first pet’s name?";
+var ans  =  "FlufferNutter";
+
+var securityQuestions = [
+ {
+ question: "What was your first pet’s name?",
+ expectedAnswer: "FlufferNutter"
+ },
+ {
+ question: "What was the model year of your first car?",
+ expectedAnswer: "1985"
+ },
+ {
+ question: "What city were you born in?",
+ expectedAnswer: "NYC"
+ }
+]
+
+
+function checkSecurityQuestion(securityQuestions, ques, ans) {
+    for (let i = 0; i < securityQuestions.length; i++) {
+        set = securityQuestions[i]
+        if (set.question === ques) {
+            if (set.expectedAnswer === ans) {
+                return true;
+            } else {
+                return "it\'s a valid question with wrong answer"
+            }
+        }
+    }
+
+    return false
+}
+var stat = checkSecurityQuestion(securityQuestions, ques, ans);
+console.log(stat);
