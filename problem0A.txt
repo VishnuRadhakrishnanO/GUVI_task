@@ -1,0 +1,65 @@
+var cat = {
+ name: 'Flufy',
+ activities: ['play', 'eat cat food'],
+ catFriend: [
+ {
+ name: 'bar',
+ activities: ['be grumpy', 'eat bread omblet'],
+ weight: 8,
+ furcolor: 'white'
+ }, 
+ {
+ name: 'foo',
+ activities: ['sleep', 'pre-sleep naps'],
+ weight: 3
+ }
+ ]
+};
+//Add height and weight to Fluffy
+ cat.height=13;
+ //Fluffy name is spelled wrongly. Update it to Fluffyy
+ cat.name='Fluffy';
+ // To print List all the activities of Fluffyy’s catFriends
+cat.catFriend.forEach(function (catFriend) {
+    console.log(catFriend.activities);
+});
+ //to Print the catFriends names.
+ cat.catFriend.forEach(function (catFriend)
+ {
+    console.log(catFriend.name);
+ });
+ // To Print the total weight of catFriends
+  cat.catFriend.forEach(function (catFriend)
+ {
+    console.log(catFriend.weight);
+ });
+ 
+ //Print the total activities of all cats (op:6)
+var total= cat.activities;
+
+ cat.catFriend.forEach(function (catFriend) {
+    total.push(catFriend.activities);
+});
+var total = total.toString().split(',');
+console.log(total.length);
+//Add 2 mo"re activities to bar & foo cats
+var act1= "playing_with_ball";
+var act2="climbing trees";
+
+cat.catFriend.forEach(function (catFriend)
+ {
+  catFriend.activities.push(act1);
+  catFriend.activities.push(act2);
+
+ });
+ 
+ //Update the fur color of bar
+ cat.catFriend.forEach(function (catFriend)
+ {
+ let result = catFriend.hasOwnProperty('furcolor');
+if(result==true)
+{
+    catFriend.furcolor = 'brown';
+}
+ });
+console.log(cat);

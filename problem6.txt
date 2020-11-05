@@ -1,0 +1,25 @@
+var array = [[["firstName", "Vasanth"], ["lastName", "Raja"], ["age", 24], ["role", "JSWizard"]], [["firstName", "Sri"], ["lastName", "Devi"], ["age", 28], ["role", "Coder"]]];
+
+function fromListToObject(array) {
+    newArr = array.toString().split(',');
+    arraychange=[];
+var o = {}; o2={};
+for (var i = 0; i < newArr.length; i += 2) {
+    
+     let result =o.hasOwnProperty(newArr[i]);
+if(result==true)
+{
+     o2[newArr[i]] = newArr[i + 1];
+}
+else{
+  
+  o[newArr[i]] = newArr[i + 1];
+}
+  
+}
+
+arraychange.push(o);
+arraychange.push(o2);
+console.log(arraychange);
+}
+fromListToObject(array);

@@ -1,0 +1,15 @@
+var array = [["make", "Ford"], ["model", "Mustang"], ["year", 1964]];
+newArr = array.toString().split(',');
+function fromListToObject(array) {
+
+
+var o = {}
+for (var i = 0; i < newArr.length; i += 2) {
+  
+  o[newArr[i]] = newArr[i + 1];
+  
+}
+
+console.log(o);
+}
+fromListToObject(array)
