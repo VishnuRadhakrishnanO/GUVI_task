@@ -24,7 +24,7 @@ function checkSecurityQuestion(securityQuestions, ques, ans) {
             if (set.expectedAnswer === ans) {
                 return true;
             } else {
-                return "it\'s a valid question with wrong answer"
+               return false
             }
         }
     }
