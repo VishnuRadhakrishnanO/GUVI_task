@@ -1,0 +1,14 @@
+1.Difference between window, screen, and document in Javascript
+https://vr11420.medium.com/difference-between-window-screen-and-document-in-javascript-640e3996853d
+
+2.Objects and its internal representation in Javascript
+https://vr11420.medium.com/objects-and-its-internal-representation-in-javascript-b4bb3d6b0e74
+
+3.Why there is a difference in behaviour for copying contents in the primitive and non-primitive type
+https://vr11420.medium.com/why-there-is-a-difference-in-behaviour-for-copying-contents-in-the-primitive-and-non-primitive-type-5abe441e49e7
+
+4.How do you copy by value a composite data type?
+https://vr11420.medium.com/how-do-you-copy-by-value-a-composite-data-type-ecfb56e71206
+
+5.Difference between HTTP1.1 vs HTTP
+https://vr11420.medium.com/difference-between-http1-1-vs-http-23ea5331e6d9
